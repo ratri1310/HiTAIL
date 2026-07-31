@@ -1,0 +1,7 @@
+runs/
+versions/
+__pycache__/
+*.pyc
+*.jsonl
+*.pt
+.DS_Store

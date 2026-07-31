@@ -1,10 +1,5 @@
 """
-HSPDL losses. Four terms, matching the locked design exactly:
 
-    L_ST    Step 3  semantic-type prototype alignment
-    L_SSL   Step 5  tail-aware ontology-guided surrogate contrastive learning
-    L_dist  Step 7  hierarchy-aware distribution alignment (q_L, q_A1, q_A2)
-    L_sep^S Step 8  semantic-type prototype separation
 
 Deliberately does NOT include: cl_ancestor, mu_y_consistency, prototype
 alignment against e_y -- all removed, per the redesign that resolved the
@@ -16,7 +11,7 @@ import torch.nn.functional as F
 
 
 # ============================================================
-# Step 3 -- L_ST: semantic-type prototype alignment
+
 # ============================================================
 
 def semantic_prototype_loss(z, semantic_idx_batch, semantic_protos, temperature: float = 0.1):
@@ -80,10 +75,7 @@ def surrogate_contrastive_loss(z, label_ids_batch, label_freq_lookup,
                                  label_to_semantic, label_to_parents, label_to_gp,
                                  temperature: float = 0.1, c: float = 2.0):
     """
-    §Step 5 -- L_SSL. rho_i scales the whole anchor-document term. Surrogate
-    positives in numerator+denominator; hard+easy negatives in denominator
-    only; ignore pairs excluded entirely; anchor excluded from all sets;
-    skipped entirely if a document has zero surrogate positives.
+   
     """
     import math
     batch = z.size(0)
@@ -238,7 +230,7 @@ def distribution_alignment_loss(logits, label_ids_batch, omega_y_lookup,
 
 
 # ============================================================
-# Step 8 -- L_sep^S: semantic-type prototype separation
+# Step 8 -- 
 # ============================================================
 
 def semantic_prototype_separation_loss(semantic_protos, gamma: float = 0.5):

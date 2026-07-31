@@ -6,10 +6,10 @@ here, with a one-line note on where it came from -- nothing hidden in code.
 import os
 from dataclasses import dataclass
 
-DATA_ROOT = os.environ.get("HSPDL_DATA_ROOT", "/localscratch/Users/ratri/Bert/bertldl/datasets/domain_files/")
-GLOBAL_FULL_PARENT = "/localscratch/Users/ratri/Bert/datasets/full_parent_sets.json"
-GLOBAL_FULL_GRANDPARENT = "/localscratch/Users/ratri/Bert/datasets/full_grandparent_sets.json"
-PROJECT_ROOT = os.environ.get("HSPDL_PROJECT_ROOT", "/localscratch/Users/ratri/Bert/bertldl/hspdl")
+DATA_ROOT = os.environ.get("HSPDL_DATA_ROOT", "/path_to/domain_files/")
+GLOBAL_FULL_PARENT = "/path_to/full_parent_sets.json"
+GLOBAL_FULL_GRANDPARENT = "/path_to/full_grandparent_sets.json"
+PROJECT_ROOT = os.environ.get("HSPDL_PROJECT_ROOT", "/path_to/hspdl")
 
 DOMAINS = ["neurology", "immunology", "embryology", "bioasq"]
 

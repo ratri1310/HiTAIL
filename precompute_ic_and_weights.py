@@ -22,9 +22,9 @@ import json
 import math
 from collections import defaultdict
 
-DATA_ROOT = "/localscratch/Users/ratri/Bert/bertldl/datasets/domain_files/"
-GLOBAL_FULL_PARENT = "/localscratch/Users/ratri/Bert/datasets/full_parent_sets.json"
-GLOBAL_FULL_GRANDPARENT = "/localscratch/Users/ratri/Bert/datasets/full_grandparent_sets.json"
+DATA_ROOT = "/lpath_to/domain_files/"
+GLOBAL_FULL_PARENT = "/path_to/full_parent_sets.json"
+GLOBAL_FULL_GRANDPARENT = "/path_to/full_grandparent_sets.json"
 
 C_FREQ = 2.0
 ETA1, ETA2 = 0.7, 0.3

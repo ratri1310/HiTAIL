@@ -22,9 +22,9 @@ Usage:
 import argparse
 import json
 
-TREE_JSON = "/localscratch/Users/ratri/Bert/datasets/global_mesh_tree.json"
-INDEX_JSON = "/localscratch/Users/ratri/Bert/datasets/global_tree_number_to_uid.json"
-OUT_DIR = "/localscratch/Users/ratri/Bert/datasets"
+TREE_JSON = "/path_to/global_mesh_tree.json"
+INDEX_JSON = "/path_to/global_tree_number_to_uid.json"
+OUT_DIR = "/path_to/datasets"
 
 
 def ancestor_tree_number(tn: str, levels_up: int):

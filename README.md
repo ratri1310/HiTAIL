@@ -1,4 +1,4 @@
-# HSPDL — Hierarchy-guided Semantic Prototype Distribution Learning
+# HiTAIL — Hierarchy-guided Semantic Prototype Distribution Learning
 
 A method for extreme multi-label biomedical text classification (MeSH
 indexing), aimed at improving prediction for rare/long-tail labels using

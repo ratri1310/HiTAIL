@@ -6,7 +6,6 @@ UMLS semantic-type prototypes, ontology-guided surrogate contrastive
 learning, and hierarchy-aware distribution alignment — without learning a
 separate prototype per label or per hierarchy node.
 
-## What's in this repo
 
 **Core pipeline:**
 - `model.py` — encoder + semantic-type prototypes + classifier
@@ -31,7 +30,7 @@ pip install -r requirements.txt
 
 ## Data
 
-Please check /Datasets
+Please check /Datasets 
 Set `HSPDL_DATA_ROOT` and `HSPDL_PROJECT_ROOT` environment variables to
 point at your own data/output locations (see `config.py`).
 

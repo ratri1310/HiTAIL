@@ -10,7 +10,7 @@ separate prototype per label or per hierarchy node.
 
 **Core pipeline:**
 - `model.py` — encoder + semantic-type prototypes + classifier
-- `losses.py` — 
+- `losses.py` 
 - `train.py` — staged training (Stage 0–5), with contrastive warm-up
   before BCE joins
 - `evaluate.py` — P@k, nDCG@k, PSP@k, PSnDCG@k, macro/micro-F1
